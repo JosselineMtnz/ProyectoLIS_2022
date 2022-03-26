@@ -1,0 +1,122 @@
+/*body*/
+body {
+    background: #fff;
+}
+/*Seccion de Servicios*/
+.seccion {
+    width: 100%;
+    text-align: center;
+}
+.seccion h2 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+.servicios {
+    width: 100%;
+    display: flex;
+}
+.servicios div {
+    flex: 1;
+    margin: 5px 5px;
+}
+.servicios img {
+    width: 150px;
+    margin: 20px 8px;
+}
+.servicios ul i {
+    font-size: 10px;
+}
+.servicios ul {
+    font-size: 1.2em;
+}
+.servicios ul li {
+    text-decoration: none;
+    list-style: none;
+}
+/*Promociones*/
+.promos {
+    width: 100%;
+    height: 275px;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.promos .promo {
+    flex: 1;
+    height: 275px;
+    margin: 0 8px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.promo .promo-hijo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.promo .promo-hijo.one {
+    width: 250px;
+    background-image: url("../img/img1.png");
+    background-size: cover;
+}
+.promo .promo-hijo.two {
+    width: 250px;
+    background-image: url("../img/img2.png");
+    background-size: cover;
+}
+.promo .promo-hijo.three {
+    width: 250px;
+    background-image: url("../img/img3.png");
+    background-size: cover;
+}
+.promo h3 {
+    margin: 40% 0;
+}
+.promo p {
+    background: linear-gradient(
+        89.64deg,
+        #746bdb -7.92%,
+        #8359e3 95.42%,
+        #8a52e7 151.95%
+    );
+    width: 111px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 768px) {
+    .servicios img {
+        width: 100px;
+    }
+    .servicios ul {
+        font-size: 0.9em;
+    }
+    .promo .promo-hijo.one {
+        width: 200px;
+    }
+    .promo .promo-hijo.two {
+        width: 200px;
+    }
+    .promo .promo-hijo.three {
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .servicios {
+        display: block;
+    }
+    .promos {
+        display: block;
+    }
+    .promo .promo-hijo.one,
+    .promo .promo-hijo.two,
+    .promo .promo-hijo.three {
+        width: 250px;
+        margin: 8px 0;
+    }
+}
