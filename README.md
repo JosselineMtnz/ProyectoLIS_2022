@@ -12,6 +12,10 @@
 > 
 > *Milián Rojas, Edgar Enrique 				MR180696*
 
+##Requisitos
+
+Poseer conexión a internet.
+
 ## Licencia
 Este proyecto está bajo la licencia Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0) Que establece:
 
@@ -19,10 +23,14 @@ Usted es libre de: Compartir — copiar y redistribuir el material en cualquier 
 
 ## Enlaces
 
+>Manual técnico:
+
+>Manual de usuario:
+
 >Trello: https://trello.com/b/zXqguDYs/proyecto-lis
 
 >Repositorio: https://github.com/JosselineMtnz/ProyectoLIS_2022.git
 
 >Mockups: https://www.figma.com/file/tn8auyWAgDQeTPzuvlZNIo/Untitled?node-id=0%3A1
 
->Video de funcionamiento: https://drive.google.com/file/d/1WUyYlN3KaZ2uPNyiFz99jxHZhHt7QXrU/view?usp=sharing
+>Video de funcionamiento: 
