@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\CistasController;
 use App\Http\Controllers\registerController;
+use App\Http\Controllers\ServiciosController;
+use App\Models\servicios;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -21,11 +24,26 @@ Route::get('/', function () {return view('Login');})->name('mostrar.inicio');
 Route::get('/register', function () {return view('Register');})->name('mostrar.registrarse');
 Route::get('/home', function () {return view('Home');})->name('mostrar.home');
 Route::get('/servicios', function () {return view('Servicios');})->name('mostrar.servicios');
-Route::get('/cita', function () {return view('Cita');})->name('mostrar.cita');
+Route::get('/cita', function () {$servicios = servicios::all();return view('Cita', ['servicios' => $servicios]);})->name('mostrar.cita');
+Route::get('/administrarServicio', [ServiciosController::class, 'index'])->name('mostrar.adservicio');
+Route::get('/citasprogramadas', [CistasController::class, 'index'])->name('mostrar.adcitas');
 Route::get('/signout', [registerController::class, 'cerrarSesion'])->name('cerrarSesion');
 
 Route::post('/', [registerController::class, 'customRegistration'])->name('register.custom');
 Route::post('/home', [registerController::class, 'customLogin'])->name('custom.login');
+/*Administar Servicios*/
+Route::post('/administrarServicio', [ServiciosController::class, 'guardar'])->name('guardar.servicio');
+Route::get('/administrarServicioupdate/{id}', [ServiciosController::class, 'show'])->name('servicio.editar');
+Route::patch('/administrarServicio/{id}', [ServiciosController::class, 'editar'])->name('servicio.update');
+Route::delete('/administrarServicio/{id}', [ServiciosController::class, 'eliminar'])->name('servicio.eliminar');
+/*Administrar citas*/
+
+Route::post('/cita', [CistasController::class, 'store'])->name('guardar.cita');
+Route::post('/cita/request', [CistasController::class, 'show'])->name('llenar.horario');
+Route::delete('/cita/{id}', [CistasController::class, 'destroy'])->name('eliminar.cita');
+Route::patch('/cita/state/{id}', [CistasController::class, 'AdministrarEstado'])->name('estado.update');
+/*Usuarios*/
+Route::get('/usuarios', [registerController::class, 'index'])->name('mostrar.usuarios');
 
 /*Inicio y Registrarse con GOOGLE */
 Route::get('/login-google', function () {

@@ -18,6 +18,8 @@ class registerController extends Controller
     public function index()
     {
         //
+        $usuarios = User::all();
+        return view('usuarios', ['usuarios' => $usuarios]);
     }
 
     /**

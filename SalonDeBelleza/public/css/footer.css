@@ -1,0 +1,80 @@
+.footer {
+    width: 100%;
+    color: #fff;
+    margin-top: auto;
+    background-color: #000;
+}
+.footer-container {
+    width: 100%;
+    display: flex;
+}
+.info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 0 0 52px;
+}
+.info div {
+    margin: 10px 0;
+}
+.info div a {
+    text-decoration: none;
+    color: #fff;
+}
+.info-two {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 0 0 52px;
+}
+.info-two h4 {
+    margin-top: 8px;
+}
+.info-two h6 {
+    margin: 5px 0;
+}
+.nombres {
+    width: 100%;
+}
+.redes {
+    width: 100%;
+}
+.redes ul {
+    display: flex;
+    font-size: 25px;
+}
+.redes ul li {
+    list-style: none;
+    margin: 0 8px 5px 0;
+}
+.redes ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.derechos {
+    padding: 8px 5px;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .footer-container {
+        display: block;
+    }
+    .info {
+        font-size: 12px;
+        padding: 10px 0 0 12px;
+    }
+    .info-two {
+        padding: 10px 0 0 12px;
+    }
+    .nombres h4 {
+        font-size: 16px;
+    }
+    .nombres h6,
+    .derechos {
+        font-size: 12px;
+    }
+}

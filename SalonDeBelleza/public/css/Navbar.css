@@ -45,7 +45,7 @@ nav {
     text-decoration: none;
     letter-spacing: 0.08em;
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 .botones {
     display: flex;
@@ -71,6 +71,12 @@ nav {
     margin: 5px 5px;
     padding: 2px 2px;
     color: #fff;
+}
+.dropdown button {
+    font-size: 12px;
+}
+.dropdown-item.links {
+    width: 100%;
 }
 .botones .btn-sesion {
     background: linear-gradient(
@@ -202,5 +208,18 @@ nav {
     }
     .toggle .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
+    }
+    .dropdown {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .dropdown button {
+        width: 100%;
+        margin: 8px 10px;
+    }
+    .dropdown-menu {
+        width: 90%;
+        margin: 0 8px;
     }
 }

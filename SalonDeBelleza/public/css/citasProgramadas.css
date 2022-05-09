@@ -1,0 +1,4 @@
+.contenedor {
+    overflow-x: auto;
+    min-height: 500px;
+}
