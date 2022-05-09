@@ -24,3 +24,5 @@ Usted es libre de: Compartir — copiar y redistribuir el material en cualquier 
 >Repositorio: https://github.com/JosselineMtnz/ProyectoLIS_2022.git
 
 >Mockups: https://www.figma.com/file/tn8auyWAgDQeTPzuvlZNIo/Untitled?node-id=0%3A1
+
+>Video de funcionamiento: https://drive.google.com/file/d/1WUyYlN3KaZ2uPNyiFz99jxHZhHt7QXrU/view?usp=sharing
