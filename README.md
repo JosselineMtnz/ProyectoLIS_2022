@@ -12,6 +12,10 @@
 > 
 > *Milián Rojas, Edgar Enrique 				MR180696*
 
+## Requisitos
+
+Poseer conexión a internet.
+
 ## Licencia
 Este proyecto está bajo la licencia Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0) Que establece:
 
