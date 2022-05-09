@@ -20,8 +20,8 @@ class CistasController extends Controller
         $citas1 = citas::all();
 
         foreach ($citas1 as $cita) {
+            if ((!(date('Y-m-d') <= $cita->Fecha)) && $cita->Estado !== 'Hecho') {
 
-            if (!(date('Y-m-d') <= $cita->Fecha)) {
                 self::estado($cita->id);
             }
         }
