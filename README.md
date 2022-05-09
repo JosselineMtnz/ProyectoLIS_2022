@@ -23,10 +23,6 @@ Usted es libre de: Compartir — copiar y redistribuir el material en cualquier 
 
 ## Enlaces
 
->Manual técnico:
-
->Manual de usuario:
-
 >Trello: https://trello.com/b/zXqguDYs/proyecto-lis
 
 >Repositorio: https://github.com/JosselineMtnz/ProyectoLIS_2022.git
